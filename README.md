@@ -1,12 +1,21 @@
 # Resolutor de Sudoku
 
 
-## Modificar directorio
+## Índice
+
+- [Modificar directorio](#id0)
+- [Cómo jugar](#id1)
+- [Esquema](#id2)
+- [Resumen](#id3)
+- [Distribución de archivos](#id4)
+
+
+## Modificar directorio <a name=id0></a>
 
 Tendrás que modificar el directorio al tuyo personal en la lı́nea 10 del fichero *es.hs*. Donde pone *main_path = texto*,  poner el tuyo.
 
 
-## Cómo jugar
+## Cómo jugar <a name=id1></a>
 
  1. Ejecutar *main.hs* en la terminal y llamar a la función *main* para empezar.
  
@@ -26,11 +35,13 @@ opción, exceptuando los casos en los que sea necesario un valor exacto y ahı�
 las respuestas de sı́ o no (y/n), entenderá como sı́ a la respuesta y, y como no a todas las demás.
 
 
-## Esquema
+## Esquema <a name=id2></a>
 
 Hay tres opciones principales:
 
  1. Jugar: abrir un sudoku (eliges el nivel) y empezar a completarlo.
+ 
+ <image src="/images/tablero.png">
  
  2. Resolver: le indicas un nivel de sudoku (son los mismos que accedes en jugar) y te da la opción de resolverlo
 de dos formas:
@@ -43,10 +54,10 @@ añadido uno, el último (difı́cil → multiple solución), que tiene dos s
      - pensando: te devuelve todas las soluciones (dos en este caso).
      
  3. Partida Guardada: reanudar partida guardada con anterioridad, como ya se mencionó en el punto (1). Opción
-valida solo cuando tengas partidas guardadas.
+válida solo cuando tengas partidas guardadas.
 
 
-## Resumen
+## Resumen <a name=id3></a>
 
 Mencionar que todas las funciones vienen comentadas el los scripts (.hs) por lo que aquı́ comentaré brevemente
 la idea del código.
@@ -70,7 +81,7 @@ ası́ si hemos llegado a la última casilla y podemos rellenarla, podemos aseg
 
 
 
-## Distribución de archivos
+## Distribución de archivos <a name=id4></a>
 
  1. funciones.hs : están las principales funciones necesarias para jugar al sudoku. Saber si es posible meter un
 numero en tal casilla (comprobar filas, columnas y el bloque), devolver el valor de la casilla (i,j), hacer el print
